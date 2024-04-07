@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body{
+            background-color: rgb(228, 230, 230);
+        }
+        div{
+            border:15px solid rgb(43, 226, 147);
+            background-color:white;
+            border-radius:10px;
+            padding-top:20px;
+            width:70%;
+            height:500px;
+            margin:auto;
+        }
+        label{
+            font-size:20px;
+        }
+        button{
+            background-color:rgb(13, 236, 121);
+            color:white;
+            font-size:15px;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:50px;
+            padding-right:50px;
+            border-radius:5px;
+            margin:20px;
+        }
+        input,select{
+            padding:10px;
+            border-radius:5px;
+            width:40%;
+        }
+    </style>
+</head>
+<body>
+    <div align=center>
+        <h1>Register</h1>
+    <form>
+        <label>First Name :</label>&nbsp;
+        <input type="text" placeholder="Enter First Name"><br><br>
+        <label>Last Name:</label>&nbsp;
+        <input type="text" placeholder="Enter Last Name"><br><br>
+        <label>Enter your mail :</label>&nbsp;
+        <input type="email" placeholder="Enter mail"><br><br>
+        <label for="dp">Course Name :</label>&nbsp;
+        <select id="dp" value="front-end" name="dp">
+        <option value="1">front-end</option>
+        <option value="1">Back-end</option>
+        <option value="1">Database</option>
+        <option value="1">Data Science</option>
+        </select><br><br>
+        <button>submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button>Reset</button>
+    </form>
+    </div>
+</body>
+</html>
