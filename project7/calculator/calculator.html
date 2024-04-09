@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body><center>
+        <input type="text" placeholder="0" id="result">
+        <table>
+            <tr>
+                <td><button onclick="clr('c')" class="class1">C</button></td>
+                <td><button onclick="display('&#40')" class="class1">&#40</button></td>
+                <td><button onclick="display('&#41')" class="class1">&#41</button></td>
+                <td><button onclick="display('+')" class="class2">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="display('7')">7</button></td>
+                <td><button onclick="display('8')">8</button></td>
+                <td><button onclick="display('9')">9</button></td>
+                <td><button onclick="display('-')" class="class2">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="display('4')">4</button></td>
+                <td><button onclick="display('5')">5</button></td>
+                <td><button onclick="display('6')">6</button></td>
+                <td><button onclick="display('*')" class="class2">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="display('1')">1</button></td>
+                <td><button onclick="display('2')">2</button></td>
+                <td><button onclick="display('3')">3</button></td>
+                <td><button onclick="display('/')" class="class2">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="display('0')">0</button></td>
+                <td><button onclick="display('.')" class="class1">.</button></td>
+                <td><button onclick="per('%')" class="class2">%</button></td>
+                <td><button onclick="calculate('=')" class="class2">=</button></td>
+            </tr>
+        </table>
+    </center>
+    </body>
+    <script>
+        let output=document.getElementById("result");
+        function display(num)
+        {
+            output.value+=num
+        }
+        function calculate(){
+            try
+            {
+                output.value=eval(output.value);
+            }
+            catch(err)
+            {
+                alert("Invalid");
+            }
+        }
+        function clr()
+        {
+            output.value="";
+        }
+        function per()
+        {
+            output.value = output.value/100;
+        }
+    </script>
+</html>
