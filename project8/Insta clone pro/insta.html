@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Instagram Web Page</title>
+    <style>
+        body {
+            display: flex; 
+            margin: 0;
+            height: 100vh;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #left-panel {
+            flex: 1;
+            padding: 20px;
+            background-color: #000000;
+            color: white;
+            border: 2px solid white;
+           
+        }
+
+        #middle-panel {
+            flex: 2;
+            max-height: 100vh;
+            overflow-y: auto;
+            background-color: #000000;
+            padding: 20px;
+            width: auto;
+            max-width: 500px;
+            border: 2px solid white;
+        }
+
+        #right-panel {
+            flex: 1;
+            padding: 20px;
+            background-color: #000000;
+            color: white;
+            border: 2px solid white;
+        }
+        .insta-feed h2 {
+            text-align: center;
+        }
+
+        .insta-feed {   
+            max-width: 350px;
+            width: 100%;
+            color: white;
+            margin: auto;
+            padding: 20px;
+            border: 4px solid white;
+            border-radius: 8px;
+            display: none;
+        }
+
+        #dm-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            display: none;
+
+        }
+
+        .dm-input {
+            margin-top: 10px;
+            width: 150px;
+            padding: 5px;
+        }
+
+        .dm-button {
+            margin-top: 10px;
+            padding: 8px;
+            background-color: blueviolet;
+            border-radius: 5px;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .login-reg-form,
+        .reg-form {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        input {
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        img {
+            width: 350px;
+            height: 350px;
+            margin: 0;
+            padding: 0;
+        }
+        abbr 
+        {
+            text-decoration: none;
+        }
+        #message-icon{
+            cursor: pointer;
+            text-align: right;
+            font-size: larger;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div id="left-panel">
+        <h2>Login / Registration</h2>
+        <button id="registrationBtn">Open Registration</button>
+        <button id="loginBtn">Login Form</button>
+        <div class="login-reg-form" id="loginForm">
+            <form>
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="loginUsername" required>
+                <br>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <br>
+                <button type="submit" id="loginfeed">Submit</button>
+            </form>
+        </div>
+        <div class="reg-form" id="regForm">
+            <form>
+                <label for="regName">Enter Name</label>
+                <input type="text" id="regName" name="regName" required>
+                <br>
+                <label for="regMobile">Mobile Number</label>
+                <input type="number" id="regMobile" name="regMobile" required>
+                <br>
+                <label for="regPassword">Set Password:</label>
+                <input type="password" id="regPassword" name="regPassword" required>
+                <br>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <br>
+                <button type="submit" id="openfeed">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div id="middle-panel">
+        <div class="insta-feed">
+            <h2>Instagram</h2>
+            <p id="message-icon">📩</p>
+            <h4>.sairam._7</h4>
+            <img src="my image.jpg" alt="Meme 1" style="border: 0.5px solid white;">
+            <pre><abbr title="Like">❤️</abbr> <abbr title="Comment">💬</abbr> <abbr title="Share">🔁</abbr>                                    <abbr title="Save">💾</abbr></pre>
+            <p>sairam._7 My profile Photo...<b>..</b></p>
+            <h4>.sairam_7</h4>
+            <img src="frnd3.jpg" alt="Meme 2">
+            <pre><abbr title="Like">❤️</abbr> <abbr title="Comment">💬</abbr> <abbr title="Share">🔁</abbr>                                    <abbr title="Save">💾</abbr></pre>
+            <p>sairam._7 My Friends ...<b>..</b></p>
+            <h4>.sairam_7</h4>
+            <img src="meme3.jpg" alt="Meme 2">
+            <pre><abbr title="Like">❤️</abbr> <abbr title="Comment">💬</abbr> <abbr title="Share">🔁</abbr>                                    <abbr title="Save">💾</abbr></pre>
+            <p>sairam._7 KMPD ...<b>..</b></p>
+        </div>
+    </div>
+    <div id="right-panel">
+        <div id="dm-container">
+            <h2>Direct Messages</h2>
+            <div>
+                <label for="dmUser1">Sairam_7</label>
+                <input type="text" class="dm-input" placeholder="Enter message" id="dmUser1" required>
+                <button class="dm-button">Send</button>
+            </div>
+            <div>
+                <label for="dmUser2">Shannu_70</label>
+                <input type="text" class="dm-input" placeholder="Enter message" id="dmUser2" required>
+                <button class="dm-button">Send</button>
+            </div>
+            <div>
+                <label for="dmUser3">Mahesh_75</label>
+                <input type="text" class="dm-input" placeholder="Enter message" id="dmUser3" required>
+                <button class="dm-button">Send</button>
+            </div>
+            <div>
+                <label for="dmUser4">Raju_71</label>
+                <input type="text" class="dm-input" placeholder="Enter message" id="dmUser4" required>
+                <button class="dm-button">Send</button>
+            </div> 
+            <div>
+                <label for="dmUser5">Datta_51007</label>
+                <input type="text" class="dm-input" placeholder="Enter message " id="dmUser5" required>
+                <button class="dm-button">Send</button>
+            </div>
+            <div>
+            <label for="dmUsername6">Prasad_4A1</label>
+                <input type="text" class="dm-input" id="dmUsername6" placeholder="Enter message" required>
+                <button class="dm-button">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', function () {
+            document.querySelector('.login-reg-form').style.display = 'block';
+            document.querySelector('.reg-form').style.display = 'none';
+        });
+    
+        document.getElementById('registrationBtn').addEventListener('click', function () {
+            document.querySelector('.login-reg-form').style.display = 'none';
+            document.querySelector('.reg-form').style.display = 'block';
+        });
+    
+        document.getElementById('openfeed').addEventListener('click', function (event) {
+            event.preventDefault(); 
+    
+          
+            var regName = document.getElementById('regName').value;
+            var regMobile = document.getElementById('regMobile').value;
+            var regPassword = document.getElementById('regPassword').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+    
+            if (regName && regMobile && regPassword && confirmPassword) {
+                document.querySelector('.insta-feed').style.display = 'block';
+            } else {
+                alert('Please fill in all fields in the registration form.'); 
+            }
+        });
+    
+        document.getElementById('loginfeed').addEventListener('click', function (event) {
+            event.preventDefault(); 
+    
+            var loginUsername = document.getElementById('loginUsername').value;
+            var loginPassword = document.getElementById('loginPassword').value;
+    
+            if (loginUsername && loginPassword) {
+                document.querySelector('.insta-feed').style.display = 'block'; 
+            } else {
+                alert('Please fill in all fields in the login form.'); 
+            }
+        });
+    
+        function clearMessageInput(button) {
+            var inputField = button.previousElementSibling;
+            inputField.value = '';
+        }
+    
+        document.querySelectorAll('.dm-button').forEach(function (button) {
+            button.addEventListener('click', function () {
+                clearMessageInput(button);
+            });
+        });
+document.getElementById('message-icon').addEventListener('click', function () {
+    document.getElementById('dm-container').style.display = 'block';
+});
+
+    </script>
+    
+</body>
+</html>
+           
