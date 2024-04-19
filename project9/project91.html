@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav_bar</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #nav{
+            background-color:black;
+            position:fixed;
+            width:100%;
+            top: 0;
+        }
+        ul{
+            list-style-type:none;
+            font-size:20px;
+            margin:0;
+            padding:0;
+        }
+        li{
+            /* display:inline; */
+            display:inline-block;
+        }
+        #nav li a{
+            text-decoration: none;
+            display: inline-block;
+            color:white;
+            padding:15px 20px;
+        }
+        #contact,#home,#services,#about{
+            padding-top:170px;
+        }
+        p{
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <section id="sec">
+    <div id="home">
+        <h2>Home</h2>
+        <p>Welcome to our website</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Learn more about what we do and our mission</p>
+    </div>
+    <div id="services">
+        <h2>Services</h2>
+        <p>Explore the services we offer to help you succeed</p>
+    </div>
+    <div id="contact">
+        <h2>Contact</h2>
+        <p>get in touch with us for more information</p>
+    </div>
+    </section>
+</body>
+</html>
