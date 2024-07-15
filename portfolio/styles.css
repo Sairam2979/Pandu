@@ -1,0 +1,156 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0; 
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.profile-img {
+    display: block;
+    margin: 100px auto 20px; 
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+section {
+    padding: 60px 20px; 
+    text-align: center;
+    margin-top: 80px; 
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+#about, #skills, #projects, #contact {
+    background-color: #e2e2e2;
+    margin-top: 10px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 5px 0;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0; 
+    margin-top: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+.fa {
+    padding: 10px;
+    text-align: center;
+    margin: 2px 2px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    background-color: #0077b5;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-whatsapp {
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-github {
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-code {
+    background-color: #5a5a5a;
+    color: white;
+    border-radius: 50%;
+}
